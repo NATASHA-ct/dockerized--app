@@ -7,6 +7,7 @@ services:
       - '5000:4000'
     volumes:
       - ./api:/app
+      - /app/node_modules
   blog:
     build: ./blog
     container_name: blog_c
